@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Web</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="cheat.css" type="text/css">
+    <style>
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        .col-12 {
+            flex-basis: 100%;
+            max-width: 100%;
+        }
+        
+        .col-4 {
+            flex-basis: 33.33%;
+            max-width: 33.33%;
+        }
+        
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+        }
+        
+        .logo {
+            height: 50px;
+            width: auto;
+        }
+        
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            min-width: 160px;
+            z-index: 1;
+        }
+        
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        
+        .dropbtn {
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .gallary {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        @media screen and (max-width: 768px) {
+            .col-4 {
+                flex-basis: 50%;
+                max-width: 50%;
+            }
+        }
+        
+        @media screen and (max-width: 480px) {
+  .row.sec2 {
+    flex-wrap: wrap;
+  }
+
+  .grid.col-4 {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+}
+    </style>
+</head>
+<script src="https://kit.fontawesome.com/8a0570de7b.js" crossorigin="anonymous"></script>
+<body>
+    <div class="row">
+        <div class="navbar col-12">
+            <div class="dropdown">
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi0.wp.com%2Faccidentesrd.com%2Fwp-content%2Fuploads%2F2021%2F06%2FMini-Logo-2001-2018.png%3Fw%3D3600%26ssl%3D1&f=1&nofb=1&ipt=efbcc239c679bcb4a23f94f758afe897c538325305ccb1217ef443ba001a4e18&ipo=images" class="logo">
+            </div>
+            <div class="dropdown space">
+                <button class="dropbtn">  Home 
+                    <i class="fa fa-caret-down" style="color: red;"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Pages
+                    <i class="fa fa-caret-down" style="color: red;"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Blog
+                    <i class="fa fa-caret-down" style="color: red;"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Cars 
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Car Details 
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Short Codes
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Shop
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="sec1 col-12">
+            <!-- <div class="info col-4">
+                <center>
+                <H1> 2016 MINI COOPER</H1>
+                <p class="b1">Free Shipping </p> <br>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum asperiores quos dolorum fugit ducimus quod vel labore ullam? Eligendi aliquid natus, vitae commodi beatae at similique rerum neque assumenda quo!
+                </p>
+                </center>
+            </div> -->
+        </div>
+    </div>
+
+    <div class="row sec2">
+        <div class="grid col-4">
+            <img src="img1.png" class="gallary">
+        </div>
+        <div class="grid col-4">
+            <img src="img2.png" class="gallary">
+        </div>
+        <div class="grid col-4">
+            <img src="img3.png" class="gallary">
+        </div>
+    </div>
+
+</body>
+</html>
